@@ -21,7 +21,7 @@ dnl
 dnl Process this file with autoconf to create configure.
 
 AC_PREREQ([2.57])
-AC_INIT(mkfontdir, [7.0], [xorg@freedestkop.org], mkfontdir)
+AC_INIT(mkfontdir, [0.99.0], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg], mkfontdir)
 AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 AM_MAINTAINER_MODE
 
@@ -29,5 +29,7 @@ AC_PROG_INSTALL
 
 AC_PATH_PROG(SED, sed)
 AC_PATH_PROG(MKFONTSCALE, mkfontscale)
+
+XORG_RELEASE_VERSION
 
 AC_OUTPUT([Makefile])
