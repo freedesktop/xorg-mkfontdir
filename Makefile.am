@@ -29,7 +29,7 @@ mkfontdir: mkfontdir.cpp
 EXTRA_DIST = mkfontdir.cpp
 CLEANFILES = $(bin_SCRIPTS)
 
-appmandir =  $(mandir)/man$(APP_MAN_SUFFIX)
+appmandir = $(APP_MAN_DIR)
 
 appman_DATA = $(appman_SOURCES:man=@APP_MAN_SUFFIX@)
 
