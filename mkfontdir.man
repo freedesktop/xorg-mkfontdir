@@ -38,10 +38,10 @@ mkfontdir \- create an index of X font files in a directory
 .IR prefix ]
 .RB [ \-e
 .IR encoding-directory-name ]
-\|.\|.\|.
+\&\|.\|.\|.
 .RB [ \-\- ]
 .RI [ directory-name
-\|.\|.\|. ]
+\&\|.\|.\|. ]
 .SH DESCRIPTION
 For each directory argument, 
 .I mkfontdir
