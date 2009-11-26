@@ -27,6 +27,7 @@ appman_PRE = mkfontdir.man
 	$(AM_V_GEN)$(SED) s,BINDIR,`echo @bindir@/mkfontscale | $(SED) s,/[^/]*$$,,`, < $< | $(SED) s/XCOMM/\#/ > $@
 
 EXTRA_DIST = mkfontdir.cpp
+MAINTAINERCLEANFILES = ChangeLog INSTALL
 CLEANFILES = $(bin_SCRIPTS)
 
 appmandir = $(APP_MAN_DIR)
