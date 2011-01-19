@@ -38,4 +38,7 @@ XORG_DEFAULT_OPTIONS
 
 AC_SUBST([bindir])
 
-AC_OUTPUT([Makefile])
+AC_CONFIG_FILES([
+	Makefile
+	man/Makefile])
+AC_OUTPUT
