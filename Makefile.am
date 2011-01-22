@@ -20,14 +20,14 @@
 #  PERFORMANCE OF THIS SOFTWARE.
 
 SUBDIRS = man
+
 bin_SCRIPTS = mkfontdir
-
-.cpp:
-	$(AM_V_GEN)$(SED) s,BINDIR,`echo @bindir@/mkfontscale | $(SED) s,/[^/]*$$,,`, < $< | $(SED) s/XCOMM/\#/ > $@
-
-EXTRA_DIST = mkfontdir.cpp
 CLEANFILES = $(bin_SCRIPTS)
-SUFFIXES = .cpp
+EXTRA_DIST = $(bin_SCRIPTS:=.in)
+DIR_SUBSTS = -e 's|@bindir[@]|$(bindir)|g'
+
+mkfontdir: mkfontdir.in
+	$(AM_V_GEN)$(SED) $(DIR_SUBSTS) < $< > $@
 
 MAINTAINERCLEANFILES = ChangeLog INSTALL
 

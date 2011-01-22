@@ -36,8 +36,6 @@ m4_ifndef([XORG_MACROS_VERSION],
 XORG_MACROS_VERSION(1.8)
 XORG_DEFAULT_OPTIONS
 
-AC_SUBST([bindir])
-
 AC_CONFIG_FILES([
 	Makefile
 	man/Makefile])
