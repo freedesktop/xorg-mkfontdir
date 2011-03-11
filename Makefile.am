@@ -27,7 +27,7 @@ EXTRA_DIST = $(bin_SCRIPTS:=.in)
 DIR_SUBSTS = -e 's|@bindir[@]|$(bindir)|g'
 
 mkfontdir: mkfontdir.in
-	$(AM_V_GEN)$(SED) $(DIR_SUBSTS) < $< > $@
+	$(AM_V_GEN)$(SED) $(DIR_SUBSTS) < mkfontdir.in > $@
 
 MAINTAINERCLEANFILES = ChangeLog INSTALL
 
